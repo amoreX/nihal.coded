@@ -1,0 +1,21 @@
+---
+import "@fontsource-variable/space-grotesk"
+import "./index.css"
+const { title } = Astro.props;
+
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body style="height: 100dvh;" class="font-space text-white">
+    <slot></slot>
+  </body>
+  <style>
+    h1 {
+      font-size: 2rem;
+    }
+  </style>
+</html>
