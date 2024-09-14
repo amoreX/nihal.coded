@@ -1,0 +1,22 @@
+---
+import {Icon} from "astro-icon/components"
+const { title, link, date, description } = Astro.props;
+---
+
+<a
+  href={link}
+  class="flex relative flex-col w-full h-24 rounded-lg group border-2 border-transparent hover:border-zinc-700"
+>
+  <div
+    class="group-hover:opacity-100 opacity-0 absolute right-0 top-0 leading-3 text-sm flex items-center bg-zinc-700 p-2 rounded-bl-lg"
+  >
+    <Icon name="arrow-up-right" />
+  </div>
+  <div class="p-0 group-hover:p-2 transition-all duration-75">
+    <h2 class="leading-3 flex lg:flex-row flex-col gap-2 ">
+      <div class="group-hover:underline">{title}</div>
+      <div class="text-zinc-400 text-sm leading-3">{date}</div>
+    </h2>
+    <p>{description}</p>
+  </div>
+</a>
