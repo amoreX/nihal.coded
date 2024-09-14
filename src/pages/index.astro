@@ -11,9 +11,15 @@ import ContactLink from "../components/ContactLink.astro";
   >
     <div class="lg:w-[60%] w-full flex flex-col">
       <h1 class="text-xl font-normal mb-4">ronish rohan</h1>
-      <div class="flex gap-4 items-center mb-4 text-zinc-400">
-        <Icon name="location" />
-        <div>bangalore, india</div>
+      <div class="flex flex-col mb-4">
+        <div class="flex gap-4 items-center mb-4 text-zinc-400">
+          <Icon name="location" />
+          <div>bangalore, india</div>
+        </div>
+        <div class="flex gap-4 items-center mb-4 text-zinc-400">
+          <Icon name="graduation-cap" />
+          <div>cmrit, 2023 - 2027</div>
+        </div>
       </div>
       <p class="mb-8">
         i'm a 19 y/o cs student. i love designing and building things. currently
@@ -27,7 +33,7 @@ import ContactLink from "../components/ContactLink.astro";
             href="https://github.com/ronishrohan"
             class="p-2 border-2 ml-auto border-transparent flex hover:border-zinc-700 rounded-lg text-zinc-400 fill-zinc-400 hover:text-white hover:fill-white leading-3 gap-2 items-center"
           >
-            <div class="-translate-y-[2px] ">more</div>
+            <div class="-translate-y-[2px]">more</div>
             <Icon name="fast-arrow-right" />
           </a>
         </h1>
@@ -60,12 +66,17 @@ import ContactLink from "../components/ContactLink.astro";
       </section>
       <section>
         <h2 class="text-zinc-400 mb-4">contact</h2>
-        <div class="flex gap-2 h-fit sm:gap-0 gap-2 flex-col sm:flex-row justify-between ">
-            <ContactLink title="email" link="https://github.com/ronishrohan"></ContactLink>
-            <ContactLink title="github" link="https://github.com/ronishrohan"></ContactLink>
-            <ContactLink title="discord" link="https://github.com/ronishrohan"></ContactLink>
-            <ContactLink title="linkedin" link="https://github.com/ronishrohan"></ContactLink>
-            <ContactLink title="instagram" link="https://github.com/ronishrohan"></ContactLink>
+        <div
+          class="flex gap-2 h-fit sm:gap-0 gap-2 flex-col sm:flex-row justify-between"
+        >
+          <ContactLink title="email" link="mailto:ronish.rohan@gmail.com" />
+          <ContactLink title="github" link="https://github.com/ronishrohan" />
+          <ContactLink title="discord" link="https://discordapp.com/users/769140296939470859" />
+          <ContactLink title="linkedin" link="https://www.linkedin.com/in/ronish-rohan-93aab627a/" />
+          <ContactLink
+            title="instagram"
+            link="https://instagram.com/ronish.rohan"
+          />
         </div>
       </section>
     </div>
