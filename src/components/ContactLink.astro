@@ -1,0 +1,11 @@
+---
+import {Icon} from "astro-icon/components"
+const {link, title} = Astro.props;
+---
+
+<a href={link}>
+    <div class="flex gap-2 text-zinc-300 hover:text-white items-center leading-3">
+        <div>{title}</div>
+        <Icon name="arrow-up-right"></Icon>
+    </div>
+</a>

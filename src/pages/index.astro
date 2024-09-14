@@ -2,6 +2,7 @@
 import { Icon } from "astro-icon/components";
 import Layout from "../layouts/Layout.astro";
 import Project from "../components/Project.astro";
+import ContactLink from "../components/ContactLink.astro";
 ---
 
 <Layout>
@@ -19,7 +20,7 @@ import Project from "../components/Project.astro";
         i am in my second year trying to build my skills. i love music and
         movies (and dogs and cats).
       </p>
-      <section class="flex flex-col w-full h-fit mb-2">
+      <section class="flex flex-col w-full h-fit mb-8">
         <h1 class="text-zinc-400 mb-4 flex items-center leading-3">
           <div class="-translate-y-[2px]">projects</div>
           <a
@@ -57,7 +58,16 @@ import Project from "../components/Project.astro";
           />
         </div>
       </section>
-      <div class="w-full flex justify-end"></div>
+      <section>
+        <h2 class="text-zinc-400 mb-4">contact</h2>
+        <div class="flex gap-2 h-fit sm:gap-0 gap-2 flex-col sm:flex-row justify-between ">
+            <ContactLink title="email" link="https://github.com/ronishrohan"></ContactLink>
+            <ContactLink title="github" link="https://github.com/ronishrohan"></ContactLink>
+            <ContactLink title="discord" link="https://github.com/ronishrohan"></ContactLink>
+            <ContactLink title="linkedin" link="https://github.com/ronishrohan"></ContactLink>
+            <ContactLink title="instagram" link="https://github.com/ronishrohan"></ContactLink>
+        </div>
+      </section>
     </div>
   </section>
 </Layout>
