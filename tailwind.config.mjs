@@ -4,7 +4,7 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				"space" : ["Space Grotesk Variable", "sans-serif"]
+				"space" : ["Space Mono", "sans-serif"]
 			}
 		},
 	},
