@@ -1,19 +1,20 @@
 ---
-import "./index.css"
-import "@fontsource/space-mono"
-const { title } = Astro.props;
-
-
-
+import "./index.css";
+import "@fontsource/space-mono";
 ---
 
 <html lang="en" class="">
   <head>
+    <link rel="./favicons/apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png" />
+    <link rel="manifest" href="./favicons/site.webmanifest" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ronish Rohan</title>
   </head>
-  <body  class="font-space  h-fit text-white">
-    <slot></slot>
+  <body class="font-space h-fit text-white">
+    <slot />
   </body>
   <style>
     h1 {
