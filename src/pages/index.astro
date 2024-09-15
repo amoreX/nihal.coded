@@ -64,21 +64,29 @@ import ContactLink from "../components/ContactLink.astro";
           />
         </div>
       </section>
-      <section>
+      <section class="mb-8">
         <h2 class="text-zinc-400 mb-4">contact</h2>
         <div
-          class="flex gap-2 h-fit sm:gap-0 gap-2 flex-col sm:flex-row justify-between"
+          class="flex gap-2 h-fit sm:gap-0 flex-col sm:flex-row justify-between"
         >
           <ContactLink title="email" link="mailto:ronish.rohan@gmail.com" />
           <ContactLink title="github" link="https://github.com/ronishrohan" />
-          <ContactLink title="discord" link="https://discordapp.com/users/769140296939470859" />
-          <ContactLink title="linkedin" link="https://www.linkedin.com/in/ronish-rohan-93aab627a/" />
+          <ContactLink
+            title="discord"
+            link="https://discordapp.com/users/769140296939470859"
+          />
+          <ContactLink
+            title="linkedin"
+            link="https://www.linkedin.com/in/ronish-rohan-93aab627a/"
+          />
           <ContactLink
             title="instagram"
             link="https://instagram.com/ronish.rohan"
           />
         </div>
       </section>
+      <div class="w-full border-t-2 border-zinc-700 mb-1" ></div>
+      <div class="text-zinc-400 text-sm" >ronish rohan</div>
     </div>
   </section>
 </Layout>
