@@ -4,7 +4,20 @@ import Layout from "../layouts/Layout.astro";
 import Project from "../components/Project.astro";
 import ContactLink from "../components/ContactLink.astro";
 ---
+<script>
 
+  import { Astro } from "astro";
+  
+
+  function checkWidth() {
+    if (window.innerWidth > 1100) {
+      window.location.href = "https://nihal-cooked.vercel.app"; // Replace with your actual wider version page path
+    }
+  }
+
+  checkWidth();
+  window.addEventListener("resize", checkWidth);
+</script>
 <Layout>
   <section
     class="bg-zinc-950 size-full flex min-h-dvh lg:justify-center px-8 sm:py-12 justify-start py-12"
